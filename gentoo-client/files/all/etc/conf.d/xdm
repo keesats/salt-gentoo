@@ -1,0 +1,4 @@
+# <--Managed by Salt-->
+
+# Sets SLiM to be used as the default login manager.
+DISPLAYMANAGER="slim"
