@@ -12,6 +12,6 @@ x11-misc/slim:
     - user: root
     - group: root
     - mode: 644
-    - source: salt://gentoo-client/files/all/etc/slim.conf
+    - source: salt://files/all/etc/slim.conf
     - require:
       - pkg: x11-misc/slim

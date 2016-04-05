@@ -3,4 +3,4 @@
     - user: blankford
     - group: blankford
     - mode: 644
-    - source: salt://gentoo-client/files/all/home/blankford/.bashrc
+    - source: salt://files/all/home/blankford/.bashrc

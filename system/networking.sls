@@ -43,7 +43,7 @@ net-wireless/broadcom-sta: #Broadcom Linux device driver
     - user: root
     - group: root
     - mode: 644
-    - source: salt://gentoo-client/files/{{ salt['grains.get']('hw_type') }}/etc/modprobe.d/blacklist.conf
+    - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/modprobe.d/blacklist.conf
     - require:
       - pkg: net-wireless/broadcom-sta
 
@@ -52,7 +52,7 @@ net-wireless/broadcom-sta: #Broadcom Linux device driver
     - user: root
     - group: root
     - mode: 644
-    - source: salt://gentoo-client/files/{{ salt['grains.get']('hw_type') }}/etc/conf.d/net
+    - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/conf.d/net
     - require:
       - pkg: net-wireless/broadcom-sta
 

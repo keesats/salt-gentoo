@@ -12,7 +12,7 @@ xfce-base/xfce4-meta: #Installs XFCE
     - user: blankford
     - group: blankford
     - mode: 644
-    - source: salt://gentoo-client/files/all/home/blankford/.xinitrc
+    - source: salt://files/all/home/blankford/.xinitrc
     - require:
       - pkg: xfce-base/xfce4-meta
 

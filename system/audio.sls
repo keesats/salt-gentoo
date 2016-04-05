@@ -19,7 +19,7 @@ media-sound/alsa-utils: #Installs alsa-utils
     - user: root
     - group: root
     - mode: 644
-    - source: salt://gentoo-client/files/{{ salt['grains.get']('hw_type') }}/etc/modprobe.d/alsa.conf
+    - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/modprobe.d/alsa.conf
     - require:
       - pkg: media-libs/alsa-lib
       - pkg: media-sound/alsa-utils
