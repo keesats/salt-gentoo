@@ -11,12 +11,12 @@ configuration assumes a masterless minion. To apply the state configuration, sim
 
 ##Hardware##
 This Gentoo configuration has been written from such a foundation as to remain hardware agnostic over time. Specific 
-configuration sets are included at this time for the following hardware types and functions:
+configuration sets are included at this time for the following hardware types and form factors:
 
 ###Types###
 - HP EliteBook 740
 
-###Functions###
+###Form Factor###
 - Laptop
 
 These fuctions are controlled via statically set Salt grains. In order to utilize the required settings for these, you
