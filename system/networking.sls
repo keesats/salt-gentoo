@@ -1,5 +1,7 @@
 # Sets up networking.
 
+{% if grains['hw_function'] == 'client' %} #If client, not server
+
 net-misc/networkmanager: #Installs NetworkManager
   pkg.installed:
     - name: net-misc/networkmanager
@@ -55,5 +57,7 @@ net-wireless/broadcom-sta: #Broadcom Linux device driver
     - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/conf.d/net
     - require:
       - pkg: net-wireless/broadcom-sta
+
+{% endif %}
 
 {% endif %}

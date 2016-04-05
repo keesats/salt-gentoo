@@ -1,5 +1,7 @@
 # Sets up ALSA/sound.
 
+{% if grains['hw_function'] == 'client' %} #If client, not server
+
 media-libs/alsa-lib: #Installs alsa-lib
   pkg.installed:
     - name: media-libs/alsa-lib
@@ -23,5 +25,7 @@ media-sound/alsa-utils: #Installs alsa-utils
     - require:
       - pkg: media-libs/alsa-lib
       - pkg: media-sound/alsa-utils
+
+{% endif %}
 
 {% endif %}

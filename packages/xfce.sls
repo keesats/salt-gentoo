@@ -1,6 +1,8 @@
 # Ensures that Slim is setup, and then installs all
 # XFCE base/extra components.
 
+{% if grains['hw_function'] == 'client' %} #If client not server
+
 xfce-base/xfce4-meta: #Installs XFCE
   pkg.installed:
     - name: xfce-base/xfce4-meta
@@ -51,3 +53,4 @@ dbus: # Ensure dbus starts at boot
     - require:
       - pkg: xfce-extras
 
+{% endif %}

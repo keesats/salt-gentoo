@@ -1,6 +1,8 @@
 # Installs Xorg components that are prerequisites for
 # loading XFCE and Slim.
 
+{% if grains['hw_function'] == 'client' %} #If client, not server
+
 x11-base/xorg-server:
   pkg.installed:
     - name: x11-misc/slim
@@ -21,3 +23,5 @@ x11-apps/xdm:
     - source: salt://files/all/etc/conf.d/xdm
     - require:
       - pkg: x11-apps/xdm
+
+{% endif %}

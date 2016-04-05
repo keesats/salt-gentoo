@@ -1,6 +1,8 @@
 # Ensures that XDM is setup and then installs
 # Slim (login manager)
 
+{% if grains['hw_function'] == 'client' %} #If client, not server
+
 x11-misc/slim:
   pkg.installed:
     - name: x11-misc/slim
@@ -15,3 +17,5 @@ x11-misc/slim:
     - source: salt://files/all/etc/slim.conf
     - require:
       - pkg: x11-misc/slim
+
+{% endif %}
