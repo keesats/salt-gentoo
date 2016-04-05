@@ -1,13 +1,18 @@
 b18/gentoo-client-salt
 ==============
 
-##Notes##
+##Introduction##
 This is a repository that configures a standalone Salt-Minion (masterless) on Gentoo for the purpose of system configuration 
 and packages that should be installed. I built this for myself in order to simplify the process of building or re-building 
 Gentoo clients, but anyone is welcome to use it. There is no need to start any services at boot, or even at all, as this
 configuration assumes a masterless minion. To apply the state configuration, simply put all of this configuration into
 /srv/salt and then run a salt-call for your local highstate at any time as follows:
 > \# sudo salt-call --local state.highstate
+
+##About##
+This configuration is designed to build a Gentoo GNU/Linux AMD64 client workstation. The install as a whole includes a
+base Gentoo installation, and XFCE as the working desktop environment. Other applications that are part of my client
+build are included as well, but that's the foundation of the setup.
 
 ##Hardware##
 This Gentoo configuration has been written from such a foundation as to remain hardware agnostic over time. Specific 
