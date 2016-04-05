@@ -1,6 +1,4 @@
-# Base applications for Gentoo install
-
-gentoo-base: #Installs Gentoo base packages
+pkgs-base: #Installs Gentoo base packages
   pkg.installed:
     - pkgs:
       - app-admin/sudo
@@ -12,6 +10,7 @@ gentoo-base: #Installs Gentoo base packages
       - sys-apps/pciutils
       - sys-auth/consolekit
       - sys-fs/cryptsetup
+      - sys-kernel/genkernel
       - sys-process/cronie
     - require:
       - file: /etc/portage/make.conf

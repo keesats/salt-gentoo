@@ -22,18 +22,6 @@ xfce-base/thunar: #Installs XFCE file manager
     - require:
       - file: /home/blankford/.xinitrc
 
-net-misc/networkmanager: #Installs NetworkManager
-  pkg.installed:
-    - name: net-misc/networkmanager
-    - require:
-      - pkg: xfce-base/thunar
-
-NetworkManager: # Ensure consolekit starts at boot
-  service.enabled:
-    - enable: True
-    - require:
-      - pkg: net-misc/networkmanager
-
 xfce-extras: #Installs XFCE extras
   pkg.installed:
     - pkgs:
