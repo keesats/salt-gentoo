@@ -1,4 +1,4 @@
-b18/gentoo-client-salt
+b18/salt-gentoo
 ==============
 
 ##Introduction##
