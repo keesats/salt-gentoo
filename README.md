@@ -23,6 +23,8 @@ These fuctions are controlled via statically set Salt grains. In order to utiliz
 will need to manually set these grains in your /etc/salt/minion file after emerging app-admin/salt. As an example,
 update the grains section as follows:
 
-> grains:
->   hw_type: hp-elitebook-740
->   hw_factor: laptop
+```bash
+grains:
+  hw_type: hp-elitebook-740
+  hw_factor: laptop
+```
