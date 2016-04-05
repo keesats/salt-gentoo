@@ -1,5 +1,5 @@
-app-office/libreoffice:
+www-client/google-chrome:
   pkg.installed:
-    - name: app-office/libreoffice
+    - name: www-client/google-chrome
     - require:
       - pkg: xfce-extras #Ensures XFCE is loaded first

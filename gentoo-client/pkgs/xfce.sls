@@ -25,6 +25,7 @@ xfce-base/thunar: #Installs XFCE file manager
 xfce-extras: #Installs XFCE extras
   pkg.installed:
     - pkgs:
+      - x11-misc/xlockmore #Screensavers
       - x11-terms/xfce4-terminal
       - x11-themes/gtk-engines-xfce
       - xfce-extra/thunar-archive-plugin

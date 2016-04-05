@@ -14,8 +14,3 @@ pkgs-base: #Installs Gentoo base packages
       - sys-process/cronie
     - require:
       - file: /etc/portage/make.conf
-      - file: /etc/portage/package.accept_keywords
-      - file: /etc/portage/package.keywords
-      - file: /etc/portage/package.license
-      - file: /etc/portage/package.mask/pacmanager
-      - file: /etc/portage/package.use

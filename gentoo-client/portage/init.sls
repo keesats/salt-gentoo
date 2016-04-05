@@ -6,6 +6,12 @@
     - group: root
     - mode: 644
     - source: salt://gentoo-client/files/{{ salt['grains.get']('hw_type') }}/etc/portage/make.conf
+    - require:
+      - file: /etc/portage/package.accept_keywords
+      - file: /etc/portage/package.keywords
+      - file: /etc/portage/package.license
+      - file: /etc/portage/package.mask/pacmanager
+      - file: /etc/portage/package.use
 
 /etc/portage/package.accept_keywords:
   file.managed:

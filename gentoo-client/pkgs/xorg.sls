@@ -6,11 +6,6 @@ x11-base/xorg-server:
     - name: x11-misc/slim
     - require:
       - file: /etc/portage/make.conf
-      - file: /etc/portage/package.accept_keywords
-      - file: /etc/portage/package.keywords
-      - file: /etc/portage/package.license
-      - file: /etc/portage/package.mask/pacmanager
-      - file: /etc/portage/package.use
 
 x11-apps/xdm:
   pkg.installed:
