@@ -1,7 +1,7 @@
 b18/gentoo-client-salt
 ==============
 
-###Notes###
+##Notes##
 This is a repository that configures a standalone Salt-Minion (masterless) on Gentoo for the purpose of system configuration 
 and packages that should be installed. I built this for myself in order to simplify the process of building or re-building 
 Gentoo clients, but anyone is welcome to use it. There is no need to start any services at boot, or even at all, as this
@@ -9,14 +9,14 @@ configuration assumes a masterless minion. To apply the state configuration, sim
 /srv/salt and then run a salt-call for your local highstate at any time as follows:
 > \# sudo salt-call --local state.highstate
 
-###Hardware###
+##Hardware##
 This Gentoo configuration has been written from such a foundation as to remain hardware agnostic over time. Specific 
 configuration sets are included at this time for the following hardware types and functions:
 
-##Types##
+###Types###
 - HP EliteBook 740
 
-##Functions##
+###Functions###
 - Laptop
 
 These fuctions are controlled via statically set Salt grains. In order to utilize the required settings for these, you
