@@ -11,6 +11,7 @@ pkgs-system-tools: #Installs Gentoo system tools
 {% endif %}
 {% if grains['hw_function'] == 'client' %} #If client, not server
       - app-text/qpdfview #PDF viewer
+      - media-gfx/gpicview #Photo viewer
 {% endif %}
     - require:
       - pkg: xfce-extras #Ensures XFCE is loaded first
