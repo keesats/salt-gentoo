@@ -10,6 +10,7 @@ pkgs-system-tools: #Installs Gentoo system tools
       - x11-apps/xbacklight #Backlight levels
 {% endif %}
 {% if grains['hw_function'] == 'client' %} #If client, not server
+      - app-editors/mousepad #Text editor
       - app-text/qpdfview #PDF viewer
       - media-gfx/gpicview #Photo viewer
 {% endif %}
