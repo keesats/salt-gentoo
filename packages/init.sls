@@ -1,8 +1,9 @@
 include: 
   - packages.base
   - packages.crashplan
+  - packages.firefox
   - packages.google-chrome
-#  - packages.libreoffice
+  - packages.libreoffice
   - packages.network-tools
   - packages.slim
   - packages.system-tools
