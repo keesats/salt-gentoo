@@ -36,6 +36,7 @@ xfce-extras: #Installs XFCE extras
       - xfce-extra/xfce4-mixer
       - xfce-extra/xfce4-notifyd
       - xfce-extra/xfce4-power-manager
+      - xfce-extra/xfce4-screenshooter
       - xfce-extra/xfce4-sensors-plugin
       - xfce-extra/xfce4-volumed
     - require:
