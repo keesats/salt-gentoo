@@ -1,0 +1,28 @@
+# <--Managed by Salt-->
+
+# <--Broadcom Wireless-->
+net-wireless/broadcom-sta ~amd64
+sys-firmware/b43-firmware ~amd64
+
+# <--Browsers-->
+www-client/firefox ~amd64
+www-client/google-chrome ~amd64
+
+# <--Google Drive client-->
+net-misc/insync ~amd64
+
+# <--LibreOffice-->
+app-office/libreoffice ~amd64
+app-office/libreoffice-l10n ~amd64
+dev-libs/liborcus ~amd64
+
+# <--Pac Manager-->
+dev-perl/Gnome2-GConf **
+dev-perl/Gnome2-Vte **
+dev-perl/Gtk2-SourceView2 **
+dev-perl/IO-Stty **
+dev-perl/Net-ARP **
+net-misc/pacmanager **
+
+# <--Salt Minion-->
+app-admin/salt ~amd64

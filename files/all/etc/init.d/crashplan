@@ -1,0 +1,25 @@
+#!/sbin/runscript
+
+# <--Managed by Salt-->
+# Written by b18
+# bradleylankford18@gmail.com
+# This is a custom OpenRC init script for CrashPlan
+# since the company doesn't offer one by default. 
+
+command="/usr/local/crashplan/bin/CrashPlanEngine"
+
+start() {
+        $command start
+}
+
+stop() {
+        $command stop
+}
+
+restart() {
+        $command restart
+}
+
+status() {
+        $command status
+}
