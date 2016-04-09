@@ -1,4 +1,4 @@
--- <--Managed by SaltStack-->
+-- <--Managed by Salt-->
 
 -- Standard awesome library
 local gears = require("gears")
