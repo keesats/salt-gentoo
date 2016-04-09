@@ -3,6 +3,7 @@ include:
   - packages.crashplan
   - packages.firefox
   - packages.google-chrome
+  - packages.handbrake
   - packages.libreoffice
   - packages.network-tools
   - packages.slim

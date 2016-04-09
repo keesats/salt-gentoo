@@ -1,5 +1,6 @@
 # <--Managed by Salt-->
 
+app-admin/conky rss wifi
 app-crypt/pinentry gnome-keyring #For NetworkManager
 dev-lang/python sqlite #Required for Firefox
 media-libs/harfbuzz icu #Required for LibreOffice
