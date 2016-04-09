@@ -30,6 +30,7 @@ That being said, specific configuration sets are included at this time for the f
 
 ###Type###
 - hp-elitebook-740
+- hp-elitebook-850
 
 These fuctions are controlled via statically set Salt grains. In order to utilize the required settings for these, you
 will need to manually set these grains in your /etc/salt/minion file after emerging app-admin/salt. As an example,
