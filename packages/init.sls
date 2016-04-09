@@ -1,4 +1,5 @@
 include: 
+  - packages.awesome-wm
   - packages.base
   - packages.crashplan
   - packages.firefox

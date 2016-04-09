@@ -13,6 +13,9 @@ pkgs-system-tools: #Installs Gentoo system tools
       - app-editors/mousepad #Text editor
       - app-text/qpdfview #PDF viewer
       - media-gfx/gpicview #Photo viewer
+      - xfce-extra/xfce4-screenshooter #Takes screenshots
+      - x11-misc/xlockmore #Screensavers
+      - x11-terms/xfce4-terminal #Terminal emulator
 {% endif %}
     - require:
-      - pkg: xfce-extras #Ensures XFCE is loaded first
+      - file: /etc/slim.conf #Ensures Slim is loaded first

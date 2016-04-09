@@ -6,7 +6,7 @@ net-misc/networkmanager: #Installs NetworkManager
   pkg.installed:
     - name: net-misc/networkmanager
     - require:
-      - pkg: xfce-extras #Ensures XFCE is loaded first
+      - file: /etc/slim.conf #Ensures Slim is loaded first
 
 net-misc/networkmanager-vpnc: #Installs NetworkManager vpnc plugin
   pkg.installed:
@@ -49,15 +49,13 @@ net-wireless/broadcom-sta: #Broadcom Linux device driver
     - require:
       - pkg: net-wireless/broadcom-sta
 
+{% endif %}
+
 /etc/conf.d/net: #Network config file
   file.managed:
     - user: root
     - group: root
     - mode: 644
     - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/conf.d/net
-    - require:
-      - pkg: net-wireless/broadcom-sta
-
-{% endif %}
 
 {% endif %}

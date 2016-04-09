@@ -17,3 +17,19 @@ pkgs-base: #Installs Gentoo base packages
       - sys-process/cronie
     - require:
       - file: /etc/portage/make.conf
+
+{% if grains['hw_function'] == 'client' %} #If client, not server
+
+consolekit: # Ensure consolekit starts at boot
+  service.enabled:
+    - enable: True
+    - require:
+      - pkg: pkgs-base
+
+dbus: # Ensure dbus starts at boot
+  service.enabled:
+    - enable: True
+    - require:
+      - pkg: pkgs-base
+
+{% endif %}

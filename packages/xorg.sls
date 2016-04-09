@@ -1,5 +1,4 @@
-# Installs Xorg components that are prerequisites for
-# loading XFCE and Slim.
+# Installs Xorg components
 
 {% if grains['hw_function'] == 'client' %} #If client, not server
 

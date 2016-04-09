@@ -18,6 +18,10 @@ the function (server, client). This design will continue to shape over time as c
 ##Hardware##
 That being said, specific configuration sets are included at this time for the following hardware types and form factors:
 
+###Desktop Type###
+- awesome-wm
+- xfce
+
 ###Form Factor###
 - laptop
 
@@ -33,6 +37,7 @@ update the grains section as follows:
 
 ```bash
 grains:
+  desktop_type: awesome-wm
   hw_factor: laptop
   hw_function: client
   hw_type: hp-elitebook-740

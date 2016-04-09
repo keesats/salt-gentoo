@@ -6,7 +6,7 @@ net-print/cups: #Printing support
   pkg.installed:
     - name: net-print/cups
     - require:
-      - pkg: xfce-extras
+      - file: /etc/slim.conf #Ensures Slim is installed first
 
 cupsd: # Ensure cupsd starts at boot
   service.enabled:
