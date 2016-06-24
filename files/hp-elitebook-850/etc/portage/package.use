@@ -3,8 +3,10 @@
 app-admin/conky rss wifi
 app-crypt/pinentry gnome-keyring #For NetworkManager
 dev-lang/python sqlite #Required for Firefox
+dev-libs/openssl -bindist
 media-libs/harfbuzz icu #Required for LibreOffice
 net-misc/iputils -caps -filecaps #Wireshark
+net-misc/openssh -bindist
 www-client/firefox -bindist #Keep Firefox branding, and compile from source
 
 # Pac Manager
