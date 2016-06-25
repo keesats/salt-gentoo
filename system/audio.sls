@@ -14,7 +14,7 @@ media-sound/alsa-utils: #Installs alsa-utils
     - require:
       - file: /etc/portage/make.conf #Ensures correct Portage config first
 
-{% if grains['hw_type'] == 'hp-elitebook-740' %} #If an HP EliteBook 740
+{% if grains['hw_type'] == 'hp-elitebook-740' or 'hp-elitebook-850' %} #If an HP EliteBook 740 or 850
 
 /etc/modprobe.d/alsa.conf: #Swaps order of sound cards in ALSA.
   file.managed:
