@@ -1,0 +1,8 @@
+# <--Managed by SaltStack-->
+
+# Set up correct env variables
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Enforce Salt highstate every hour
+0 * * * * /usr/bin/salt-call --local state.highstate

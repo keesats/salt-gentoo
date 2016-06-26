@@ -1,2 +1,2 @@
 include: 
-  - miscellaneous.bashrc
+  - miscellaneous.user-shell

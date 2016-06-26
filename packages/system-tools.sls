@@ -4,6 +4,7 @@ pkgs-system-tools: #Installs Gentoo system tools
       - app-arch/unrar #Works with RAR files
       - app-arch/unzip #Works with ZIP files
       - app-arch/xz-utils #Works with XZ files
+      - sys-apps/pciutils
       - sys-fs/ncdu #Disk usage analyzer
       - sys-process/htop
 {% if grains['hw_factor'] == 'laptop' %} #If laptop
