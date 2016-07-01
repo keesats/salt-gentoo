@@ -33,6 +33,11 @@ do
 	fi
 done
 
+# Create file if not already there
+if [ ! -f $ET_FWREV_STATEFILE ]; then
+    touch $ET_FWREV_STATEFILE
+fi
+
 # Check files
 for i in "$IPSET_RESTOREFILE" "$ET_FWREV_STATEFILE" "$ET_FWREV_TEMP" "$ET_FWRULES_TEMP"
 do

@@ -6,6 +6,7 @@ app-office/libreoffice-l10n ~amd64
 dev-libs/liborcus ~amd64
 media-video/handbrake ~amd64
 net-misc/insync ~amd64
+net-misc/polly ~amd64
 net-wireless/broadcom-sta ~amd64
 sys-firmware/b43-firmware ~amd64
 www-client/firefox ~amd64
