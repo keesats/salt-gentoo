@@ -7,6 +7,7 @@ dev-libs/libpcre pcre16 #Required for Dropbox
 dev-libs/openssl bindist
 dev-qt/qtcore icu #Required for Dropbox
 media-libs/harfbuzz icu #Required for LibreOffice
+media-libs/mesa gles2 #Required for freshplayerplugin
 net-firewall/ipset -modules
 net-misc/openssh bindist #Required for Dropbox
 net-misc/iputils -caps -filecaps #Wireshark

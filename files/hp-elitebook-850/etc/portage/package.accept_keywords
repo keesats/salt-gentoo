@@ -11,3 +11,4 @@ net-wireless/broadcom-sta ~amd64
 sys-firmware/b43-firmware ~amd64
 www-client/firefox ~amd64
 www-client/google-chrome ~amd64
+www-plugins/freshplayerplugin ~amd64
