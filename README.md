@@ -19,7 +19,7 @@ overlay contains installs for the following packages that aren't offered in the 
 There is nothing you'll need to do to install or utilize these packages, other than simply applying the Salt state
 to the machine you're working on, and then install the package. Eg: emerge -av net-misc/insync
 
-##About##
+##Details##
 This configuration is designed to build Gentoo GNU/Linux machines. The install as a whole includes basic applications
 and things get added on top dependent on the scenario (laptop, desktop, type of hardware, etc.) This set of configurations
 was designed to remain agnostic in regards to the type of form factor (laptop, desktop), type of hardware (HP, Dell), or
