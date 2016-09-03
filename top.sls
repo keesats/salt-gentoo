@@ -5,4 +5,5 @@ base:
     - miscellaneous
     - packages
     - portage
+    - overlays
     - system

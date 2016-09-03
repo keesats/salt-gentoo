@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>bradleylankford18@gmail.com</email>
+    <name>Bradley Lankford</name>
+  </maintainer>
+  <longdescription>
+    Advanced cross-platform Google Drive client.
+  </longdescription>
+</pkgmetadata>

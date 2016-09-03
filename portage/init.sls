@@ -10,8 +10,9 @@
       - file: /etc/portage/package.accept_keywords
       - file: /etc/portage/package.keywords
       - file: /etc/portage/package.license
-      - file: /etc/portage/package.mask/pacmanager
+      - file: /etc/portage/package.mask
       - file: /etc/portage/package.use
+      - file: /var/lib/layman/make.conf
 
 /etc/portage/package.accept_keywords:
   file.managed:
@@ -34,12 +35,12 @@
     - mode: 644
     - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/portage/package.license
 
-/etc/portage/package.mask/pacmanager:
+/etc/portage/package.mask:
   file.managed:
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/portage/package.mask/pacmanager
+    - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/portage/package.mask
 
 /etc/portage/package.use:
   file.managed:

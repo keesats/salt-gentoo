@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<layman>
+    <overlay
+	type	= "git"
+	src	= "git://github.com/b18/gentoo-overlay.git"
+	contact	= "bradleylankford18@gmail.com"
+	name	= "b18">
+		<link>https://github.com/b18/gentoo-overlay</link>
+		<description>b18/gentoo-overlay</description>
+    </overlay>
+</layman>

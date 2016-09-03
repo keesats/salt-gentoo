@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>bradleylankford18@gmail.com</email>
+    <name>Bradley Lankford</name>
+  </maintainer>
+  <longdescription>
+    Plex Media Server is an organizer for your media and provides streaming over the web and to devices
+  </longdescription>
+</pkgmetadata>

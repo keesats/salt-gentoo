@@ -4,6 +4,7 @@ app-admin/salt ~amd64
 app-office/libreoffice ~amd64
 app-office/libreoffice-l10n ~amd64
 dev-libs/liborcus ~amd64
+media-tv/plex-media-server ~amd64
 media-video/handbrake ~amd64
 net-misc/insync ~amd64
 net-misc/polly ~amd64

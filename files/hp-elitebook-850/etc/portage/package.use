@@ -8,6 +8,7 @@ dev-libs/openssl bindist
 dev-qt/qtcore icu #Required for Dropbox
 media-libs/harfbuzz icu #Required for LibreOffice
 media-libs/mesa gles2 #Required for freshplayerplugin
+media-video/ffmpeg fdk #Required for Handbrake
 net-firewall/ipset -modules
 net-misc/openssh bindist #Required for Dropbox
 net-misc/iputils -caps -filecaps #Wireshark
