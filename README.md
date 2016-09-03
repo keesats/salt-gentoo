@@ -25,10 +25,10 @@ and things get added on top dependent on the scenario (laptop, desktop, type of 
 was designed to remain agnostic in regards to the type of form factor (laptop, desktop), type of hardware (HP, Dell), or
 the function (server, client). This design will continue to shape over time as config is added.
 
-##Hardware##
+##Supported Hardware##
 That being said, specific configuration sets are included at this time for the following hardware types and form factors:
 
-###Desktop Type###
+###Desktop Environment###
 - awesome-wm
 - xfce
 
@@ -38,7 +38,7 @@ That being said, specific configuration sets are included at this time for the f
 ###Function###
 - client
 
-###Type###
+###Hardware Type###
 - hp-elitebook-740
 - hp-elitebook-850
 
