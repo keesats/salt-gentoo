@@ -14,6 +14,12 @@ net-misc/networkmanager-vpnc: #Installs NetworkManager vpnc plugin
     - require:
       - pkg: net-misc/networkmanager
 
+gnome-extra/nm-applet: #GUI for Network Manager
+  pkg.installed:
+    - name: gnome-extra/nm-applet
+    - require:
+      - pkg: net-misc/networkmanager
+
 NetworkManager: # Ensure NetworkManager starts at boot
   service.enabled:
     - enable: True
