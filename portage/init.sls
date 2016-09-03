@@ -19,32 +19,32 @@
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/portage/package.accept_keywords
+    - source: salt://files/all/etc/portage/package.accept_keywords
 
 /etc/portage/package.keywords:
   file.managed:
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/portage/package.keywords
+    - source: salt://files/all/etc/portage/package.keywords
 
 /etc/portage/package.license:
   file.managed:
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/portage/package.license
+    - source: salt://files/all/etc/portage/package.license
 
 /etc/portage/package.mask:
   file.managed:
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/portage/package.mask
+    - source: salt://files/all/etc/portage/package.mask
 
 /etc/portage/package.use:
   file.managed:
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/portage/package.use
+    - source: salt://files/all/etc/portage/package.use
