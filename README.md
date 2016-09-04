@@ -25,8 +25,13 @@ and things get added on top dependent on the scenario (laptop, desktop, type of 
 was designed to remain agnostic in regards to the type of form factor (laptop, desktop), type of hardware (HP, Dell), or
 the function (server, client). This design will continue to shape over time as config is added.
 
-##Supported Hardware##
-That being said, specific configuration sets are included at this time for the following hardware types and form factors:
+##Grain Variabilization##
+This entire Salt configuration is built to be highly variable-ized and applicable in any use case that I've personally run
+into. The configuration isn't perfect, but it will continue to grow over time as I set up more and more Gentoo machines.
+All of the configuration that gets applied to your machines from this Salt configuration will be based on statically set
+grain values that you configure in your /etc/salt/minion file. See below for which values the configuration expects to be
+set in order to do its job. Looking through the various states to see how they're applied will also help the configs make
+more sense.
 
 ###default_user###
 - useraccount1 [Enter your default user account here]
