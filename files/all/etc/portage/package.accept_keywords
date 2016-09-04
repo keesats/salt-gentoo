@@ -1,15 +1,20 @@
 # <--Managed by Salt-->
-
 app-admin/eclean-kernel ~amd64
 app-admin/salt ~amd64
 app-office/libreoffice ~amd64
 app-office/libreoffice-l10n ~amd64
 dev-libs/liborcus ~amd64
+dev-python/gntp ~amd64
 dev-python/pymountboot ~amd64
+dev-python/pythonutils ~amd64
+dev-python/rarfile ~amd64
+dev-python/yenc ~amd64
 media-tv/plex-media-server ~amd64
 media-video/handbrake ~amd64
 net-misc/insync ~amd64
 net-misc/polly ~amd64
+net-nntp/sabnzbd ~amd64
+net-nntp/sickrage ~amd64
 net-wireless/broadcom-sta ~amd64
 sys-firmware/b43-firmware ~amd64
 www-client/firefox ~amd64
