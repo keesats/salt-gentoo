@@ -1,15 +1,20 @@
 # <--Managed by Salt-->
 
-{% if grains['ip_type'] == 'static' %} #If static IP
-config_{{ salt['grains.get']('default_interface') }}="{{ salt['grains.get']('net_ip') }} netmask {{ salt['grains.get']('net_mask') }}"
-routes_{{ salt['grains.get']('default_interface') }}="default via {{ salt['grains.get']('net_gw') }}"
-dns_servers_{{ salt['grains.get']('default_interface') }}="{{ salt['grains.get']('net_dns') }}"
+{% if grains['ip_type'] == 'static' %}
+# Static
+config_{{ salt['grains.get']('net_interface') }}="{{ salt['grains.get']('net_ip') }} netmask {{ salt['grains.get']('net_mask') }}"
+routes_{{ salt['grains.get']('net_interface') }}="default via {{ salt['grains.get']('net_gw') }}"
+dns_servers_{{ salt['grains.get']('net_interface') }}="{{ salt['grains.get']('net_dns') }}"
 {% endif %}
 
-{% if grains['ip_type'] == 'static' %} #If using DHCP
-config_{{ salt['grains.get']('default_interface') }}="dhcp"
-{% if grains['net_type'] == 'wireless' %} #If using wireless
+{% if grains['ip_type'] == 'dhcp' %}
+# DHCP
+config_{{ salt['grains.get']('net_interface') }}="dhcp"
+
+{% if grains['net_type'] == 'wireless' %}
+# Wireless
 modules="wpa_supplicant"
-wpa_supplicant_{{ salt['grains.get']('default_interface') }}="-Dnl80211"
+wpa_supplicant_{{ salt['grains.get']('net_interface') }}="-Dnl80211"
 {% endif %}
+
 {% endif %}
