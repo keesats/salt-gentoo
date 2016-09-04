@@ -18,6 +18,6 @@ pkgs-system-tools: #Installs Gentoo system tools
       - xfce-extra/xfce4-screenshooter #Takes screenshots
       - x11-misc/xlockmore #Screensavers
       - x11-terms/xfce4-terminal #Terminal emulator
-{% endif %}
     - require:
       - file: /etc/slim.conf #Ensures Slim is loaded first
+{% endif %}

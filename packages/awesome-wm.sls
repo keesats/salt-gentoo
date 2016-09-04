@@ -1,5 +1,7 @@
 # Installs awesome-wm & other components
 
+{% if grains['hw_function'] == 'client' %} #If client, not server
+
 {% if grains['desktop_type'] == 'awesome-wm' %} #If running awesome-wm
 
 x11-wm/awesome: #Installs awesome-wm
@@ -252,5 +254,7 @@ app-admin/conky: #Installs conky
     - source: salt://files/all/home/blankford/.xinitrc_awesome-wm
     - require:
       - file: /home/blankford/.conkyrc
+
+{% endif %}
 
 {% endif %}

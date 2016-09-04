@@ -29,18 +29,22 @@ the function (server, client). This design will continue to shape over time as c
 That being said, specific configuration sets are included at this time for the following hardware types and form factors:
 
 ###Desktop Environment###
-- awesome-wm
-- xfce
+- awesome-wm (Awesome tiling window manager)
+- none (No desktop environment)
+- xfce (XFCE4)
 
 ###Form Factor###
-- laptop
+- desktop (Desktop)
+- laptop (Laptop features)
 
 ###Function###
-- client
+- client (A client node)
+- server (A server node)
 
 ###Hardware Type###
 - hp-elitebook-740
 - hp-elitebook-850
+- super-micro
 
 These fuctions are controlled via statically set Salt grains. In order to utilize the required settings for these, you
 will need to manually set these grains in your /etc/salt/minion file after emerging app-admin/salt. As an example,

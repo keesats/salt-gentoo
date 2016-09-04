@@ -3,6 +3,8 @@
 # OpenRC naming convention, as opposed to the Debian init format, by
 # using the referenced source file.
 
+{% if grains['hw_function'] == 'client' %} #If client, not server
+
 {% if salt['file.directory_exists' ]('/usr/local/crashplan') %}
 
 /etc/init.d/crashplan:
@@ -11,5 +13,7 @@
     - group: root
     - mode: 755
     - source: salt://files/all/etc/init.d/crashplan
+
+{% endif %}
 
 {% endif %}

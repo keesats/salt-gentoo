@@ -1,6 +1,8 @@
 # Ensures that Slim is setup, and then installs all
 # XFCE base/extra components.
 
+{% if grains['hw_function'] == 'client' %} #If client, not server
+
 {% if grains['desktop_type'] == 'xfce' %} #If client not server
 
 xfce-base/xfce4-meta: #Installs XFCE
@@ -40,5 +42,7 @@ xfce-extras: #Installs XFCE extras
       - xfce-extra/xfce4-volumed
     - require:
       - pkg: xfce-base/thunar
+
+{% endif %}
 
 {% endif %}
