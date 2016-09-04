@@ -83,10 +83,13 @@ update the grains section as follows:
 
 ```bash
 grains:
-  desktop_type: awesome-wm
-  hw_factor: laptop
+  default_user: myuseraccount
+  desktop_type: none
+  hw_factor: laptop 
   hw_function: client
-  hw_type: hp-elitebook-740
+  hw_type: hp-elitebook-850
+  ip_type: dhcp
+  net_type: wireless
 ```
 
 Feel free to look through the SLS files to see the relevant configurations for each of these. This should grow over
