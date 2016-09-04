@@ -28,35 +28,47 @@ the function (server, client). This design will continue to shape over time as c
 ##Supported Hardware##
 That being said, specific configuration sets are included at this time for the following hardware types and form factors:
 
-###Default Username###
+###default_user###
 - useraccount1 [Enter your default user account here]
 
-###Desktop Environment###
+###desktop_type###
 - awesome-wm (Awesome tiling window manager)
 - none (No desktop environment)
 - xfce (XFCE4)
 
-###Form Factor###
+###hw_factor###
 - desktop (Desktop)
 - laptop (Laptop features)
 
-###Function###
+###hw_function###
 - client (A client node)
 - server (A server node)
 
-###Hardware Type###
+###hw_type###
 - hp-elitebook-740
 - hp-elitebook-850
 - super-micro
 
-###IP Type###
+###ip_type###
 - dhcp
 - static
 
-###Network Interface###
+##net_dns###
+- 1.1.1.1 [IP address of your DNS server, if using static]
+
+###net_interface###
 - eth0 [Enter your network interface name here]
 
-###Network Type###
+###net_ip###
+- 1.1.1.100 [Static IP address of your machine, if using static]
+
+###net_mask###
+- 255.255.255.0 [Subnet mask of your machine, if using static]
+
+###net_gw###
+- 1.1.1.1 [IP address of your default gateway, if using static]
+
+###net_type###
 - wired
 - wireless
 

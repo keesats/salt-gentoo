@@ -1,9 +1,9 @@
 # <--Managed by Salt-->
 
 {% if grains['ip_type'] == 'static' %} #If static IP
-config_{{ salt['grains.get']('default_interface') }}="192.168.1.13/24"
-routes_{{ salt['grains.get']('default_interface') }}="default via 192.168.1.1"
-dns_servers_{{ salt['grains.get']('default_interface') }}="192.168.1.1 8.8.8.8"
+config_{{ salt['grains.get']('default_interface') }}="{{ salt['grains.get']('net_ip') }} netmask {{ salt['grains.get']('net_mask') }}"
+routes_{{ salt['grains.get']('default_interface') }}="default via {{ salt['grains.get']('net_gw') }}"
+dns_servers_{{ salt['grains.get']('default_interface') }}="{{ salt['grains.get']('net_dns') }}"
 {% endif %}
 
 {% if grains['ip_type'] == 'static' %} #If using DHCP
