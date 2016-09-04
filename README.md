@@ -84,7 +84,7 @@ update the grains section as follows:
 ```bash
 grains:
   default_user: myuseraccount
-  desktop_type: none
+  desktop_type: xfce
   hw_factor: laptop 
   hw_function: client
   hw_type: hp-elitebook-850
