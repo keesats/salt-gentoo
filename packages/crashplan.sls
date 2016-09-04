@@ -12,7 +12,7 @@
     - user: root
     - group: root
     - mode: 755
-    - source: salt://files/all/etc/init.d/crashplan
+    - source: salt://files/etc/init.d/crashplan
 
 {% endif %}
 

@@ -5,7 +5,8 @@
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/{{ salt['grains.get']('hw_type') }}/etc/portage/make.conf
+    - source: salt://files/etc/portage/make.conf
+    - template: jinja
     - require:
       - file: /etc/portage/package.accept_keywords
       - file: /etc/portage/package.keywords

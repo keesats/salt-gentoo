@@ -19,7 +19,7 @@ x11-apps/xdm:
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/all/etc/conf.d/xdm
+    - source: salt://files/etc/conf.d/xdm
     - require:
       - pkg: x11-apps/xdm
 

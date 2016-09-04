@@ -3,7 +3,7 @@
 /etc/iptables.sh:
   file.managed:
     - name: /etc/iptables.sh
-    - source: salt://files/all/etc/iptables.sh
+    - source: salt://files/etc/iptables.sh
     - user: root
     - group: root
     - mode: 744

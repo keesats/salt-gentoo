@@ -2,8 +2,6 @@
 
 media-libs/fdk-aac FraunhoferFDK #Required for Handbrake
 
-{% if grains['hw_function'] == 'client' %} #If client, not server
-
+{% if grains['hw_function'] == 'client' %} # If client, not server
 www-client/google-chrome google-chrome
-
 {% endif %}
