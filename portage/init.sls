@@ -19,32 +19,37 @@
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/all/etc/portage/package.accept_keywords
+    - source: salt://files/etc/portage/package.accept_keywords
+    - template: jinja
 
 /etc/portage/package.keywords:
   file.managed:
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/all/etc/portage/package.keywords
-
+    - source: salt://files/etc/portage/package.keywords
+    - template: jinja
+ 
 /etc/portage/package.license:
   file.managed:
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/all/etc/portage/package.license
+    - source: salt://files/etc/portage/package.license
+    - template: jinja
 
 /etc/portage/package.mask:
   file.managed:
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/all/etc/portage/package.mask
+    - source: salt://files/etc/portage/package.mask
+    - template: jinja
 
 /etc/portage/package.use:
   file.managed:
     - user: root
     - group: root
     - mode: 644
-    - source: salt://files/all/etc/portage/package.use
+    - source: salt://files/etc/portage/package.use
+    - template: jinja

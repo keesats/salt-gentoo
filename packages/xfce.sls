@@ -1,32 +1,32 @@
 # Ensures that Slim is setup, and then installs all
 # XFCE base/extra components.
 
-{% if grains['hw_function'] == 'client' %} #If client, not server
+{% if grains['hw_function'] == 'client' %} # If client, not server
 
-{% if grains['desktop_type'] == 'xfce' %} #If client not server
+{% if grains['desktop_type'] == 'xfce' %} # If desktop environment is XFCE
 
-xfce-base/xfce4-meta: #Installs XFCE
+xfce-base/xfce4-meta: # Installs XFCE
   pkg.installed:
     - name: xfce-base/xfce4-meta
     - require:
       - file: /etc/slim.conf
 
-/home/blankford/.xinitrc: #Sets up xinit config file
+/home/{{ salt['grains.get']('default_user') }}/.xinitrc: # Sets up xinit config file
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 644
-    - source: salt://files/all/home/blankford/.xinitrc_xfce
+    - source: salt://files/all/home/default_user/.xinitrc_xfce
     - require:
       - pkg: xfce-base/xfce4-meta
 
-xfce-base/thunar: #Installs XFCE file manager
+xfce-base/thunar: # Installs XFCE file manager
   pkg.installed:
     - name: xfce-base/thunar
     - require:
-      - file: /home/blankford/.xinitrc
+      - file: /home/{{ salt['grains.get']('default_user') }}/.xinitrc
 
-xfce-extras: #Installs XFCE extras
+xfce-extras: # Installs XFCE extras
   pkg.installed:
     - pkgs:
       - x11-misc/xlockmore # Screensavers

@@ -1,6 +1,6 @@
 # Installs Xorg components
 
-{% if grains['hw_function'] == 'client' %} #If client, not server
+{% if grains['hw_function'] == 'client' %} # If client, not server
 
 x11-base/xorg-server:
   pkg.installed:

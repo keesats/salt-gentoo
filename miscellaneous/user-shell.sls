@@ -1,15 +1,15 @@
-# Settings to customize user shell
+# Settings to customize default user shell
 
-/home/blankford/.bashrc: #Loads custom .bashrc config
+/home/{{ salt['grains.get']('default_user') }}/.bashrc: #Loads custom .bashrc config
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 644
-    - source: salt://files/all/home/blankford/.bashrc
+    - source: salt://files/home/default_user/.bashrc
 
-/home/blankford/.bash_profile: # Loads custom .bash_profile config
+/home/{{ salt['grains.get']('default_user') }}/.bash_profile: # Loads custom .bash_profile config
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 644
-    - source: salt://files/all/home/blankford/.bash_profile
+    - source: salt://files/home/default_user/.bash_profile

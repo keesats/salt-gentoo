@@ -1,22 +1,26 @@
-pkgs-base: #Installs Gentoo base packages
+pkgs-base: # Installs Gentoo base packages
   pkg.installed:
     - pkgs:
       - app-admin/sudo
       - app-admin/sysklogd
       - app-portage/gentoolkit
-      - app-portage/layman #Provides overlay functionality
+      - app-portage/layman # Provides overlay functionality
       - net-misc/dhcpcd
       - sys-apps/mlocate
       - sys-apps/pciutils
       - sys-kernel/genkernel
       - sys-process/cronie
-{% if grains['hw_function'] == 'client' %} #If client, not server
+
+{% if grains['hw_function'] == 'client' %} # If client, not server
+
       - dev-libs/libgcrypt #Provides GnuPG crypto libraries
       - dev-libs/libmcrypt #Provides encryption algorithms
       - sys-apps/dbus
       - sys-auth/consolekit
       - sys-fs/cryptsetup
+
 {% endif %}
+
     - require:
       - file: /etc/portage/make.conf
 

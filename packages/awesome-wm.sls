@@ -10,10 +10,10 @@ x11-wm/awesome: #Installs awesome-wm
     - require:
       - file: /etc/slim.conf
 
-/home/blankford/.config/awesome/themes/dremora/icons: #Creates awesome config dirs
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons: #Creates awesome config dirs
   file.directory:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - file_mode: 755
     - dir_mode: 755
     - makedirs: True
@@ -24,236 +24,236 @@ x11-wm/awesome: #Installs awesome-wm
     - require:
       - pkg: x11-wm/awesome
 
-/home/blankford/.config/awesome/rc.lua: #Awesome primary config file
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/rc.lua: #Awesome primary config file
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/rc.lua
+    - source: salt://files/all/home/default_user/.config/awesome/rc.lua
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/volume.lua: #Awesome volume widget
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/volume.lua: #Awesome volume widget
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/volume.lua
+    - source: salt://files/all/home/default_user/.config/awesome/volume.lua
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/theme.lua: #Dremora theme file
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/theme.lua: #Dremora theme file
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/theme.lua
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/theme.lua
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/background.jpg: #Dremora background
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/background.jpg: #Dremora background
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/background.jpg
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/background.jpg
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/arrl_lr_post.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/arrl_lr_post.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/arrl_lr_post.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/arrl_lr_post.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/arrl_lr_pre.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/arrl_lr_pre.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/arrl_lr_pre.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/arrl_lr_pre.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/dwindle.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/dwindle.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/dwindle.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/dwindle.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/fairh.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/fairh.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/fairh.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/fairh.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/fairv.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/fairv.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/fairv.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/fairv.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/floating.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/floating.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/floating.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/floating.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/magnifier.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/magnifier.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/magnifier.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/magnifier.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/max.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/max.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/max.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/max.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/spiral.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/spiral.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/spiral.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/spiral.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/square_sel.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/square_sel.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/square_sel.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/square_sel.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/square_unsel.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/square_unsel.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/square_unsel.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/square_unsel.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/submenu.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/submenu.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/submenu.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/submenu.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/tilebottom.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/tilebottom.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/tilebottom.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/tilebottom.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/tileleft.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/tileleft.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/tileleft.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/tileleft.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/tile.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/tile.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/tile.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/tile.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/tiletop.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/tiletop.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/tiletop.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/tiletop.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/uselesstileleft.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/uselesstileleft.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/uselesstileleft.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/uselesstileleft.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/uselesstile.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/uselesstile.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/uselesstile.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/uselesstile.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
-/home/blankford/.config/awesome/themes/dremora/icons/uselesstiletop.png: #Icon
+/home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons/uselesstiletop.png: #Icon
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.config/awesome/themes/dremora/icons/uselesstiletop.png
+    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/uselesstiletop.png
     - require:
-      - file: /home/blankford/.config/awesome/themes/dremora/icons
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
 app-admin/conky: #Installs conky
   pkg.installed:
     - name: app-admin/conky
     - require:
-      - file: /home/blankford/.config/awesome/rc.lua
+      - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/rc.lua
 
-/home/blankford/.conkyrc:
+/home/{{ salt['grains.get']('default_user') }}/.conkyrc:
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/blankford/.conkyrc
+    - source: salt://files/all/home/default_user/.conkyrc
     - require:
       - pkg: app-admin/conky
 
-/home/blankford/.xinitrc: #Sets up xinit config file
+/home/{{ salt['grains.get']('default_user') }}/.xinitrc: #Sets up xinit config file
   file.managed:
-    - user: blankford
-    - group: blankford
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
     - mode: 644
-    - source: salt://files/all/home/blankford/.xinitrc_awesome-wm
+    - source: salt://files/all/home/default_user/.xinitrc_awesome-wm
     - require:
-      - file: /home/blankford/.conkyrc
+      - file: /home/{{ salt['grains.get']('default_user') }}/.conkyrc
 
 {% endif %}
 

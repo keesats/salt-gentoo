@@ -1,4 +1,4 @@
-# b18/salt-gentoo top.sls
+# b18/salt-gentoo
 
 base:
   '*':

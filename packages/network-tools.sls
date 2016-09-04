@@ -1,4 +1,4 @@
-pkgs-network-tools: #Installs Gentoo network tools
+pkgs-network-tools: # Installs Gentoo network tools
   pkg.installed:
     - pkgs:
       - net-analyzer/mtr
@@ -8,12 +8,16 @@ pkgs-network-tools: #Installs Gentoo network tools
       - net-firewall/ipset # IPSet for use with IPTables
       - net-misc/ntp
       - net-misc/whois
+
 {% if grains['hw_function'] == 'client' %} # If client, not server
+
       - net-analyzer/wireshark
       - net-dialup/minicom # Serial access
       - net-ftp/atftp # TFTP server
       - net-misc/taylor-uucp # Serial/USB access in Pac Manager
       - net-misc/telnet-bsd # Telnet client
+
 {% endif %}
+
     - require:
       - pkg: pkgs-base # Require base pkgs first
