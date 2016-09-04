@@ -1,6 +1,0 @@
-# <--Managed by Salt-->
-
-config_enp0s25="dhcp"
-config_wlo1="dhcp"
-modules="wpa_supplicant"
-wpa_supplicant_wlo1="-Dnl80211"
