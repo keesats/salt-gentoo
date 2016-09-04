@@ -91,6 +91,3 @@ grains:
   ip_type: dhcp
   net_type: wireless
 ```
-
-Feel free to look through the SLS files to see the relevant configurations for each of these. This should grow over
-time as I personally use more hardware with Gentoo/SaltStack.
