@@ -53,7 +53,7 @@ That being said, specific configuration sets are included at this time for the f
 - dhcp
 - static
 
-##net_dns###
+###net_dns###
 - 1.1.1.1 [IP address of your DNS server, if using static]
 
 ###net_interface###
