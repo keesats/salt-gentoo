@@ -5,6 +5,7 @@ pkgs-base: # Installs Gentoo base packages
       - app-admin/sysklogd
       - app-portage/gentoolkit
       - app-portage/layman # Provides overlay functionality
+      - dev-vcs/git
       - net-misc/dhcpcd
       - sys-apps/mlocate
       - sys-apps/pciutils

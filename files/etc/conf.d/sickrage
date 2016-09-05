@@ -1,0 +1,8 @@
+# <--Managed by SaltStack-->
+
+SICKRAGE_USER={{ salt['grains.get']('default_user') }}
+SICKRAGE_GROUP={{ salt['grains.get']('default_user') }}
+SICKRAGE_DIR=/opt/sickrage/
+PATH_TO_PYTHON_2=/usr/bin/python2.7
+SICKRAGE_DATADIR=/opt/sickrage/
+SICKRAGE_CONFDIR=/opt/sickrage/

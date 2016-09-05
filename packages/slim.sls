@@ -1,5 +1,4 @@
-# Ensures that XDM is setup and then installs
-# Slim (login manager)
+# Sets up Slim and ensures XDM is loaded before doing so
 
 {% if grains['hw_function'] == 'client' %} #If client, not server
 
