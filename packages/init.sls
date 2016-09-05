@@ -5,6 +5,7 @@ include:
   - packages.google-chrome
   - packages.handbrake
 # - packages.libreoffice # Not installed by default
+  - packages.mate
   - packages.network-tools
   - packages.slim
   - packages.system-tools

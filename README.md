@@ -39,6 +39,7 @@ more sense.
 
 ###desktop_type###
 - awesome-wm (Awesome tiling window manager)
+- mate (MATE desktop)
 - none (No desktop environment)
 - xfce (XFCE4)
 

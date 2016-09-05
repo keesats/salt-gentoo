@@ -16,6 +16,7 @@ pkgs-base: # Installs Gentoo base packages
 
       - dev-libs/libgcrypt #Provides GnuPG crypto libraries
       - dev-libs/libmcrypt #Provides encryption algorithms
+      - dev-perl/XML-Parser
       - sys-apps/dbus
       - sys-auth/consolekit
       - sys-fs/cryptsetup

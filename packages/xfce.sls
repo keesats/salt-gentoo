@@ -11,20 +11,11 @@ xfce-base/xfce4-meta: # Installs XFCE
     - require:
       - file: /etc/slim.conf
 
-/home/{{ salt['grains.get']('default_user') }}/.xinitrc: # Sets up xinit config file
-  file.managed:
-    - user: {{ salt['grains.get']('default_user') }}
-    - group: {{ salt['grains.get']('default_user') }}
-    - mode: 644
-    - source: salt://files/home/default_user/.xinitrc_xfce
-    - require:
-      - pkg: xfce-base/xfce4-meta
-
 xfce-base/thunar: # Installs XFCE file manager
   pkg.installed:
     - name: xfce-base/thunar
     - require:
-      - file: /home/{{ salt['grains.get']('default_user') }}/.xinitrc
+      - pkg: xfce-base/xfce4-meta
 
 xfce-extras: # Installs XFCE extras
   pkg.installed:

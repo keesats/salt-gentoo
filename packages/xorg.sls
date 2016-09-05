@@ -14,6 +14,16 @@ x11-apps/xdm:
     - require:
       - pkg: x11-base/xorg-server
 
+/home/{{ salt['grains.get']('default_user') }}/.xinitrc: # Sets up xinit config file
+  file.managed:
+    - user: {{ salt['grains.get']('default_user') }}
+    - group: {{ salt['grains.get']('default_user') }}
+    - mode: 644
+    - source: salt://files/home/default_user/.xinitrc
+    - template: jinja
+    - require:
+      - pkg: x11-apps/xdm
+
 /etc/conf.d/xdm:
   file.managed:
     - user: root
@@ -21,6 +31,6 @@ x11-apps/xdm:
     - mode: 644
     - source: salt://files/etc/conf.d/xdm
     - require:
-      - pkg: x11-apps/xdm
+      - file: /home/{{ salt['grains.get']('default_user') }}/.xinitrc
 
 {% endif %}
