@@ -12,6 +12,7 @@ include:
   - packages.xorg
 
 {% if grains['host'] == 'micro-a' %} #If client, not server
+  - packages.btsync
   - packages.sabnzbd
   - packages.sickrage
 {% endif %}

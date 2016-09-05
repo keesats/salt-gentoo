@@ -1,0 +1,52 @@
+#!/bin/sh
+# <--Managed by SaltStack-->
+
+DAEMON=/opt/btsync/btsync
+CONFIG=/opt/btsync/config
+
+start() {
+if [ -f $CONFIG ]; then
+echo "Starting BTSync..."
+start-stop-daemon -o -S -x $DAEMON -- --config $CONFIG
+else
+echo "Couldn't start BTSync (no $CONFIG found)"
+fi
+}
+
+stop() {
+dbpid=`pgrep -f $DAEMON`
+if [ ! -z "$dbpid" ]; then
+echo "Stopping BTSync..."
+start-stop-daemon -o -K -x $DAEMON
+fi
+}
+
+status() {
+dbpid=`pgrep -f $DAEMON`
+if [ -z "$dbpid" ]; then
+echo "BTSync: not running."
+else
+echo "BTSync: running (pid $dbpid)"
+fi
+}
+
+case "$1" in
+start)
+start
+;;
+stop)
+stop
+;;
+restart|reload|force-reload)
+stop
+start
+;;
+status)
+status
+;;
+*)
+echo "Usage: /etc/init.d/btsync {start|stop|reload|force-reload|restart|status}"
+exit 1
+esac
+
+exit 0
