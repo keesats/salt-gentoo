@@ -16,7 +16,7 @@ xfce-base/xfce4-meta: # Installs XFCE
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 644
-    - source: salt://files/all/home/default_user/.xinitrc_xfce
+    - source: salt://files/home/default_user/.xinitrc_xfce
     - require:
       - pkg: xfce-base/xfce4-meta
 

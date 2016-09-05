@@ -1,10 +1,10 @@
 include: 
   - packages.awesome-wm
   - packages.base
-  - packages.firefox # Not installed by default
+# - packages.firefox # Not installed by default
   - packages.google-chrome
   - packages.handbrake
-  - packages.libreoffice # Not installed by default
+# - packages.libreoffice # Not installed by default
   - packages.network-tools
   - packages.slim
   - packages.system-tools
