@@ -9,6 +9,7 @@ app-crypt/gcr gtk
 app-crypt/pinentry gnome-keyring #For NetworkManager
 dev-lang/perl ithreads
 dev-libs/ossp-uuid perl
+mate-base/mate base extras themes
 media-libs/harfbuzz icu #Required for LibreOffice
 media-libs/mesa gles2 #Required for freshplayerplugin
 media-video/ffmpeg fdk #Required for Handbrak
