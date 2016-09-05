@@ -6,13 +6,14 @@ net-firewall/ipset -modules
 {% if grains['hw_function'] == 'client' %} # If client, not server
 app-admin/conky rss wifi
 app-crypt/gcr gtk
-app-crypt/pinentry gnome-keyring #For NetworkManager
+app-crypt/pinentry gnome-keyring # NetworkManager
 dev-lang/perl ithreads
 dev-libs/ossp-uuid perl
 mate-base/mate base extras themes
-media-libs/harfbuzz icu #Required for LibreOffice
-media-libs/mesa gles2 #Required for freshplayerplugin
-media-video/ffmpeg fdk #Required for Handbrak
-net-misc/iputils -caps -filecaps #Wireshark
+media-libs/harfbuzz icu # LibreOffice
+media-libs/mesa gles2 # Freshplayerplugin
+media-video/ffmpeg fdk # Handbrake
+net-misc/iputils -caps -filecaps # Wireshark
+sys-libs/zlib minizip # VLC
 www-client/firefox -bindist #Keep Firefox branding, and compile from source
 {% endif %}

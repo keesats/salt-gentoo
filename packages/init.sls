@@ -9,6 +9,7 @@ include:
   - packages.network-tools
   - packages.slim
   - packages.system-tools
+  - packages.vlc
   - packages.xfce
   - packages.xorg
 
