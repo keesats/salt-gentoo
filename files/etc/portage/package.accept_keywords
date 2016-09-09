@@ -24,3 +24,4 @@ net-misc/insync ~amd64
 net-misc/polly ~amd64
 net-nntp/sabnzbd ~amd64
 net-nntp/sickrage ~amd64
+net-p2p/syncthing ~amd64

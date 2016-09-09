@@ -13,10 +13,11 @@ include:
   - packages.xfce
   - packages.xorg
 
-{% if grains['host'] == 'micro-a' %} #If client, not server
+{% if grains['host'] == 'micro-a' %} # Match host name
   - packages.btsync
   - packages.sabnzbd
   - packages.sickrage
+  - packages.syncthing
 {% endif %}
 
 # Not currently used
