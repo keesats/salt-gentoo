@@ -15,7 +15,7 @@ overlay contains installs for the following packages that aren't offered in the 
 - BitTorrent Sync 2.3.8 (Updated 2016-09-05)
 - Insync Google Drive Client 1.3.10.36104 (Updated 2016-09-03)
 - Pac Manager 4.5.5.7 (Updated 2016-06-23)
-- Plex Media Server 1.1.3.2700-6f64a8d (Updated 2016-09-03)
+- Plex Media Server 1.1.4.2757-24ffd60 (Updated 2016-09-22)
 
 There is nothing you'll need to do to install or utilize these packages, other than simply applying the Salt state
 to the machine you're working on, and then install the package. Eg: emerge -av net-misc/insync

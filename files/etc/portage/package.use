@@ -2,6 +2,7 @@
 
 dev-lang/python sqlite
 net-firewall/ipset -modules
+net-nntp/sabnzbd unzip
 
 {% if grains['hw_function'] == 'client' %} # If client, not server
 app-admin/conky rss wifi
