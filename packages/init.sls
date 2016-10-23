@@ -14,6 +14,7 @@ include:
   - packages.xorg
 
 {% if grains['host'] == 'micro-a' %} # Match host name
+  - packages.openvpn
   - packages.sabnzbd
   - packages.sickrage
   - packages.syncthing
