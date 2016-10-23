@@ -14,7 +14,6 @@ include:
   - packages.xorg
 
 {% if grains['host'] == 'micro-a' %} # Match host name
-  - packages.btsync
   - packages.sabnzbd
   - packages.sickrage
   - packages.syncthing
