@@ -1,7 +1,7 @@
 # Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=6
 
 inherit eutils unpacker user
 
@@ -9,8 +9,8 @@ DESCRIPTION="Plex Media Server is an organizer for your media and provides strea
 HOMEPAGE="http://plex.tv/"
 
 MY_PN="plexmediaserver"
-BUILD="3102"
-COMMIT="a8accf1"
+BUILD="3112"
+COMMIT="1751929"
 MY_PV="${PV}.${BUILD}-${COMMIT}"
 MY_P="${MY_PN}_${MY_PV}"
 
