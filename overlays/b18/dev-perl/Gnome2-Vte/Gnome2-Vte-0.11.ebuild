@@ -21,7 +21,7 @@ RDEPEND="dev-lang/perl
 	x11-libs/vte"
 
 DEPEND="${RDEPEND}
-	dev-perl/extutils-pkgconfig
+	dev-perl/ExtUtils-PkgConfig
 	dev-perl/ExtUtils-Depends
 	virtual/pkgconfig"
 
