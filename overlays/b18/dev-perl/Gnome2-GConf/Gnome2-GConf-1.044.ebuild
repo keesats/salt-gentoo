@@ -20,7 +20,7 @@ RDEPEND="gnome-base/gconf:2
     dev-lang/perl"
 
 DEPEND="${RDEPEND}
-    dev-perl/extutils-pkgconfig
+    dev-perl/ExtUtils-PkgConfig
     dev-perl/ExtUtils-Depends
     virtual/pkgconfig"
 

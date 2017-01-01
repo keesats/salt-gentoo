@@ -21,7 +21,7 @@ RDEPEND="dev-lang/perl
 DEPEND="$RDEPEND
     dev-perl/glib-perl
     dev-perl/ExtUtils-Depends
-    dev-perl/extutils-pkgconfig
+    dev-perl/ExtUtils-PkgConfig
     virtual/perl-ExtUtils-MakeMaker
     x11-libs/gtksourceview:2.0"
 
