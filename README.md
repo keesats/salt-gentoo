@@ -90,5 +90,6 @@ grains:
   hw_function: client
   hw_type: hp-elitebook-850
   ip_type: dhcp
+  net_interface: wlo1
   net_type: wireless
 ```
