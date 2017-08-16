@@ -3,20 +3,25 @@
 {% if grains['hw_function'] == 'client' %} #If client, not server
 app-office/libreoffice ~amd64
 app-office/libreoffice-l10n ~amd64
+dev-lang/rust ~amd64
+dev-libs/nspr ~amd64
+dev-libs/nss ~amd64
 dev-python/awscli ~amd64
 dev-python/boto3 ~amd64
 dev-python/botocore ~amd64
 dev-python/jmespath ~amd64
 dev-python/s3transfer ~amd64
+dev-util/cargo ~amd64
 media-libs/libbluray ~amd64
 media-libs/libpng ~amd64
+media-libs/libbluray ~amd64
 net-wireless/broadcom-sta ~amd64
 sys-firmware/b43-firmware ~amd64
+virtual/rust ~amd64
 www-client/firefox ~amd64
 www-client/google-chrome ~amd64
 www-plugins/freshplayerplugin ~amd64
 {% endif %}
-
 app-admin/eclean-kernel ~amd64
 app-admin/salt ~amd64
 dev-libs/liborcus ~amd64

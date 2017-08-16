@@ -29,7 +29,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/rc.lua
+    - source: salt://files/home/default_user/.config/awesome/rc.lua
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -38,7 +38,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/volume.lua
+    - source: salt://files/home/default_user/.config/awesome/volume.lua
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -47,7 +47,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/theme.lua
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/theme.lua
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -56,7 +56,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/background.jpg
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/background.jpg
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -65,7 +65,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/arrl_lr_post.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/arrl_lr_post.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -74,7 +74,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/arrl_lr_pre.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/arrl_lr_pre.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -83,7 +83,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/dwindle.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/dwindle.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -92,7 +92,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/fairh.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/fairh.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -101,7 +101,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/fairv.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/fairv.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -110,7 +110,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/floating.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/floating.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -119,7 +119,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/magnifier.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/magnifier.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -128,7 +128,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/max.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/max.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -137,7 +137,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/spiral.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/spiral.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -146,7 +146,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/square_sel.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/square_sel.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -155,7 +155,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/square_unsel.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/square_unsel.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -164,7 +164,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/submenu.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/submenu.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -173,7 +173,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/tilebottom.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/tilebottom.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -182,7 +182,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/tileleft.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/tileleft.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -191,7 +191,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/tile.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/tile.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -200,7 +200,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/tiletop.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/tiletop.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -209,7 +209,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/uselesstileleft.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/uselesstileleft.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -218,7 +218,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/uselesstile.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/uselesstile.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -227,7 +227,7 @@ x11-wm/awesome: #Installs awesome-wm
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.config/awesome/themes/dremora/icons/uselesstiletop.png
+    - source: salt://files/home/default_user/.config/awesome/themes/dremora/icons/uselesstiletop.png
     - require:
       - file: /home/{{ salt['grains.get']('default_user') }}/.config/awesome/themes/dremora/icons
 
@@ -242,18 +242,9 @@ app-admin/conky: #Installs conky
     - user: {{ salt['grains.get']('default_user') }}
     - group: {{ salt['grains.get']('default_user') }}
     - mode: 755
-    - source: salt://files/all/home/default_user/.conkyrc
+    - source: salt://files/home/default_user/.conkyrc
     - require:
       - pkg: app-admin/conky
-
-/home/{{ salt['grains.get']('default_user') }}/.xinitrc: #Sets up xinit config file
-  file.managed:
-    - user: {{ salt['grains.get']('default_user') }}
-    - group: {{ salt['grains.get']('default_user') }}
-    - mode: 644
-    - source: salt://files/all/home/default_user/.xinitrc_awesome-wm
-    - require:
-      - file: /home/{{ salt['grains.get']('default_user') }}/.conkyrc
 
 {% endif %}
 
