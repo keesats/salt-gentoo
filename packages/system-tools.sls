@@ -16,13 +16,8 @@ pkgs-system-tools: # Installs Gentoo system tools
 
 {% if grains['hw_function'] == 'client' %} # If client, not server
 
-      - app-editors/mousepad # Text editor
-      - app-text/qpdfview # PDF viewer
-      - media-gfx/gpicview # Photo viewer
       - media-libs/libtxc_dxtn # For smooth graphics w/ mesa
-      - xfce-extra/xfce4-screenshooter # Takes screenshots
       - x11-misc/xlockmore # Screensavers
-      - x11-terms/xfce4-terminal # Terminal emulator
     - require:
       - file: /etc/slim.conf # Ensures Slim is loaded first
 

@@ -20,6 +20,9 @@ xfce-base/thunar: # Installs XFCE file manager
 xfce-extras: # Installs XFCE extras
   pkg.installed:
     - pkgs:
+      - app-editors/mousepad
+      - app-text/qpdfview
+      - media-gfx/gpicview
       - x11-misc/xlockmore # Screensavers
       - x11-themes/gtk-engines-xfce
       - xfce-extra/thunar-archive-plugin
@@ -30,6 +33,7 @@ xfce-extras: # Installs XFCE extras
       - xfce-extra/xfce4-power-manager
       - xfce-extra/xfce4-screenshooter
       - xfce-extra/xfce4-sensors-plugin
+      - x11-terms/xfce4-terminal
       - xfce-extra/xfce4-volumed
     - require:
       - pkg: xfce-base/thunar
