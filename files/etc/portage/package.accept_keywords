@@ -6,6 +6,7 @@ app-office/libreoffice-l10n ~amd64
 dev-lang/rust ~amd64
 dev-libs/nspr ~amd64
 dev-libs/nss ~amd64
+dev-libs/openssl ~amd64
 dev-python/awscli ~amd64
 dev-python/boto3 ~amd64
 dev-python/botocore ~amd64
