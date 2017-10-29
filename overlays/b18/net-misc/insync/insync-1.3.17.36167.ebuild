@@ -8,8 +8,8 @@ OTHER=1.3.12.36116
 DESCRIPTION="Advanced cross-platform Google Drive client"
 HOMEPAGE="https://www.insynchq.com/"
 SRC_URI="
-	x86?      ( http://s.insynchq.com/builds/insync_${PV}-precise_i386.deb )
-	amd64?    ( http://s.insynchq.com/builds/insync_${PV}-precise_amd64.deb )
+	x86?      ( http://s.insynchq.com/builds/insync_${PV}-xenial_i386.deb )
+	amd64?    ( http://s.insynchq.com/builds/insync_${PV}-xenial_amd64.deb )
 	nautilus? ( http://s.insynchq.com/builds/insync-nautilus_${OTHER}-precise_all.deb )
 	dolphin?  ( http://s.insynchq.com/builds/insync-dolphin_${OTHER}-precise_all.deb )
 	thunar?   ( http://s.insynchq.com/builds/insync-thunar_${OTHER}-precise_all.deb )
@@ -32,9 +32,9 @@ src_unpack() {
 	cd "${S}"
 
 	if use amd64 ; then
-		unpack insync_"${PV}"-precise_amd64.deb
+		unpack insync_"${PV}"-xenial_amd64.deb
 	else
-		unpack insync_"${PV}"-precise_i386.deb
+		unpack insync_"${PV}"-xenial_i386.deb
 	fi
 
 	unpack ./data.tar.gz
