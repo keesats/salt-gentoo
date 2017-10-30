@@ -9,9 +9,11 @@ net-nntp/sabnzbd unzip
 app-admin/conky rss wifi
 app-crypt/gcr gtk
 app-crypt/pinentry gnome-keyring # NetworkManager
+app-text/poppler qt5
 dev-lang/perl ithreads
 dev-libs/libpcre pcre16
 dev-libs/ossp-uuid perl
+dev-libs/xmlsec nss
 mate-base/mate base extras themes
 media-libs/harfbuzz icu # LibreOffice
 media-libs/mesa gles2 # Freshplayerplugin
