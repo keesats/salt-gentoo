@@ -22,4 +22,5 @@ net-misc/iputils -caps -filecaps # Wireshark
 sys-apps/busybox -static
 sys-libs/zlib minizip # VLC
 www-client/firefox -bindist #Keep Firefox branding, and compile from source
+x11-terms/rxvt-unicode blink xft
 {% endif %}
