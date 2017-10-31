@@ -1,7 +1,7 @@
 b18/salt-gentoo
 ==============
 
-# Introduction
+## Introduction
 This is a repository that configures a standalone Salt-Minion (masterless) on Gentoo GNU/Linux. I built this for
 myself in order to simplify the process of building or re-building Gentoo machines, but anyone is welcome to use it.
 There is no need to start any services at boot, or even at all, as this configuration assumes a masterless minion.
@@ -71,7 +71,7 @@ more sense.
 ### net_mask
 * 255.255.255.0 [Subnet mask of your machine, if using static]
 
-###net_gw
+### net_gw
 * 1.1.1.1 [IP address of your default gateway, if using static]
 
 ### net_type
