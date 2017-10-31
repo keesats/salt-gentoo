@@ -12,9 +12,8 @@ your local highstate at any time as follows:
 ## Overlays
 This configuration also sets up a local layman overlay called "b18", that resides in /srv/salt/overlays/b18. This
 overlay contains installs for the following packages that aren't offered in the native Gentoo Portage tree:
-* Insync Google Drive Client 1.3.17.36167 (Updated 2017-08-15)
+* Insync (Google Drive Client) 1.3.17.36167 (Updated 2017-08-15)
 * Pac Manager 4.5.5.7 (Updated 2016-06-23)
-* Plex Media Server 1.3.1.3102-a8accf1 (Updated 2016-12-07)
 
 There is nothing you'll need to do to install or utilize these packages, other than simply applying the Salt state
 to the machine you're working on, and then install the package. Eg: emerge -av net-misc/insync
